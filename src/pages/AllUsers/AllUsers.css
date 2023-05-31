@@ -1,0 +1,16 @@
+.allUsers {
+    background-color: #343434;
+    min-height: calc(100vh - 90px);
+}
+
+.allUsers__wrapper {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+
+
+
