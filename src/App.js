@@ -1,4 +1,5 @@
 import Header from './components/Header/Header'
+import Modal from './components/Modal.js/Modal';
 import AllUsers from './pages/AllUsers/AllUsers'
 
 

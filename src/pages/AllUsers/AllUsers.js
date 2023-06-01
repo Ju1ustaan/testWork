@@ -6,7 +6,8 @@ import User from '../../components/User/User'
 
 const AllUsers = () => {
     const [allUsers, setAllUsers] = useState([])
-
+    
+    // здесь я запрашиваю всех юзеров
     useEffect(() => {
   
       const getData = async () => {
@@ -20,6 +21,7 @@ const AllUsers = () => {
     <section className='allUsers'>
         <div className='container'>
             <div className='allUsers__wrapper'>
+              
                 
                 {
                     allUsers.map((el) => (

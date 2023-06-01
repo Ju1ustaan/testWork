@@ -8,9 +8,16 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
 .container {
   max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
+
 

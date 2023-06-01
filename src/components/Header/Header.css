@@ -30,6 +30,7 @@
     width: 50px;
     height: 10px;
     top: 10px;
+    z-index: 0;
 }
 
 .header__logo::after {
@@ -39,4 +40,5 @@
     width: 50px;
     height: 10px;
     bottom: 10px;
+    z-index: 0;
 }
