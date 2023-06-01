@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import axios from 'axios';
 import './Modal.css'
 
-const Modal = ({ setShownModal }) => {
+const Modal = ({ setShownModal, name, setName, phoneNumber, setPhoneNumber, password, setPassword }) => {
 
-    const [name, setName] = useState('');
-    const [phoneNumber, setPhoneNumber] = useState('');
-    const [password, setPassword] = useState('');
+
 
 
     const handleNameChange = (e) => {
@@ -42,6 +40,8 @@ const Modal = ({ setShownModal }) => {
             console.log(error);
         })
         
+
+        setShownModal(false)
     }
 
 

@@ -1,16 +1,18 @@
+import { useState } from 'react';
 import Header from './components/Header/Header'
-import Modal from './components/Modal.js/Modal';
 import AllUsers from './pages/AllUsers/AllUsers'
 
 
 const App = () => {
-  
+  const [name, setName] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [password, setPassword] = useState('');
 
 
   return (
     <div className="App">
-        <Header/>
-        <AllUsers/>
+        <Header setName={setName} name={name} setPhoneNumber={setPhoneNumber} phoneNumber={phoneNumber} password={password} setPassword={setPassword} />
+        <AllUsers name={name} />
     </div>
   );
 }

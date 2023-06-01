@@ -4,7 +4,7 @@ import './AllUsers.css'
 import User from '../../components/User/User'
 
 
-const AllUsers = () => {
+const AllUsers = ({ name }) => {
     const [allUsers, setAllUsers] = useState([])
     
     // здесь я запрашиваю всех юзеров
@@ -15,7 +15,7 @@ const AllUsers = () => {
         setAllUsers(data)
       }
       getData()
-    }, [])
+    }, [name])
 
   return (
     <section className='allUsers'>

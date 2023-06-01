@@ -3,7 +3,7 @@ import Button from '../../components/Button/Button'
 import './Header.css'
 import Modal from '../Modal.js/Modal'
 
-const Header = () => {
+const Header = ({name, setName, phoneNumber, setPhoneNumber, password, setPassword}) => {
   const [shownModal, setShownModal] = useState(false)
   
   return (
@@ -19,7 +19,7 @@ const Header = () => {
             </div>
         </div>
         {
-          shownModal && <Modal setShownModal={setShownModal}/>
+          shownModal && <Modal setShownModal={setShownModal} setName={setName} name={name} setPhoneNumber={setPhoneNumber} phoneNumber={phoneNumber} password={password} setPassword={setPassword}/>
         }
     </header>
   )
